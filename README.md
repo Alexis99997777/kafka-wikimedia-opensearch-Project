@@ -22,7 +22,7 @@ Wikimedia EventStream  →  Kafka Producer  →  Kafka Broker  →  Kafka Consum
 
 ## Tech Stack
 
-- **Java** (or your language here)
+- **Java**
 - **Apache Kafka** – distributed event streaming platform
 - **OpenSearch** – distributed search and analytics engine
 - **Wikimedia EventStreams API** – public SSE stream of recent Wikipedia changes
@@ -73,20 +73,6 @@ Events include Wikipedia page edits, new pages, user registrations, and more —
 
 ---
 
-## Project Structure
-
-```
-├── src/
-│   ├── main/java/
-│   │   ├── producer/       # Wikimedia SSE → Kafka
-│   │   └── consumer/       # Kafka → OpenSearch
-├── docker-compose.yml       # Kafka + OpenSearch setup
-├── pom.xml
-└── README.md
-```
-
----
-
 ## Key Concepts Practiced
 
 - Building an end-to-end **real-time data pipeline**
@@ -94,11 +80,3 @@ Events include Wikipedia page edits, new pages, user registrations, and more —
 - Connecting to and indexing documents in **OpenSearch**
 - Handling **Server-Sent Events (SSE)** streams in Java
 - Kafka best practices: idempotent producers, consumer groups, offset management
-
----
-
-## References
-
-- [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
-- [OpenSearch Java Client](https://opensearch.org/docs/latest/clients/java/)
-- [Wikimedia EventStreams](https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams)
